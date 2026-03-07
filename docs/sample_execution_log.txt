@@ -1,0 +1,219 @@
+CUDA Aerial Image Processing - Sample Execution Log
+====================================================
+
+This document demonstrates the expected output when running the CUDA image
+processing pipeline on a CUDA-capable system.
+
+--------------------------------------------------------------------------------
+SAMPLE EXECUTION OUTPUT
+--------------------------------------------------------------------------------
+
+$ ./run.sh --num 10 --verbose
+
+╔═══════════════════════════════════════════════════════════════╗
+║     CUDA Aerial Image Processing Pipeline                     ║
+║     GPU-Accelerated Image Processing for Large Datasets       ║
+╚═══════════════════════════════════════════════════════════════╝
+
+[INFO] CUDA Version: 12.2
+[INFO] GPU Detected: NVIDIA GeForce RTX 3090
+
+Compiling CUDA: src/main.cu
+Compiling C++: src/image_utils.cpp
+Linking bin/cuda_image_processor...
+[SUCCESS] Build completed successfully!
+
+[INFO] Found 38 images in ./aerials
+[INFO] Running: ./bin/cuda_image_processor -i ./aerials -o ./output -m all -n 10 -v
+
+╔═══════════════════════════════════════════════════════════════╗
+║     CUDA Aerial Image Processing Pipeline                     ║
+║     GPU-Accelerated Image Processing for Large Datasets       ║
+╚═══════════════════════════════════════════════════════════════╝
+
+GPU Device: NVIDIA GeForce RTX 3090
+  Compute Capability: 8.6
+  Total Global Memory: 24576 MB
+  Multiprocessors: 82
+
+Processing Configuration:
+  Input directory: ./aerials
+  Output directory: ./output
+  Processing mode: all
+  Images to process: 10
+  Blur radius: 3
+
+Processing images...
+═══════════════════════════════════════════════════════════════
+[1/10] 2.1.01.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.01_grayscale.png
+  Saved blurred: ./output/2.1.01_blur.png
+  Saved edges: ./output/2.1.01_edge.png
+  Saved enhanced: ./output/2.1.01_enhanced.png
+  Processing time: 8.234 ms
+[2/10] 2.1.02.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.02_grayscale.png
+  Saved blurred: ./output/2.1.02_blur.png
+  Saved edges: ./output/2.1.02_edge.png
+  Saved enhanced: ./output/2.1.02_enhanced.png
+  Processing time: 5.891 ms
+[3/10] 2.1.03.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.03_grayscale.png
+  Saved blurred: ./output/2.1.03_blur.png
+  Saved edges: ./output/2.1.03_edge.png
+  Saved enhanced: ./output/2.1.03_enhanced.png
+  Processing time: 5.923 ms
+[4/10] 2.1.04.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.04_grayscale.png
+  Saved blurred: ./output/2.1.04_blur.png
+  Saved edges: ./output/2.1.04_edge.png
+  Saved enhanced: ./output/2.1.04_enhanced.png
+  Processing time: 5.756 ms
+[5/10] 2.1.05.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.05_grayscale.png
+  Saved blurred: ./output/2.1.05_blur.png
+  Saved edges: ./output/2.1.05_edge.png
+  Saved enhanced: ./output/2.1.05_enhanced.png
+  Processing time: 5.812 ms
+[6/10] 2.1.06.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.06_grayscale.png
+  Saved blurred: ./output/2.1.06_blur.png
+  Saved edges: ./output/2.1.06_edge.png
+  Saved enhanced: ./output/2.1.06_enhanced.png
+  Processing time: 5.798 ms
+[7/10] 2.1.07.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.07_grayscale.png
+  Saved blurred: ./output/2.1.07_blur.png
+  Saved edges: ./output/2.1.07_edge.png
+  Saved enhanced: ./output/2.1.07_enhanced.png
+  Processing time: 5.845 ms
+[8/10] 2.1.08.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.08_grayscale.png
+  Saved blurred: ./output/2.1.08_blur.png
+  Saved edges: ./output/2.1.08_edge.png
+  Saved enhanced: ./output/2.1.08_enhanced.png
+  Processing time: 5.901 ms
+[9/10] 2.1.09.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.09_grayscale.png
+  Saved blurred: ./output/2.1.09_blur.png
+  Saved edges: ./output/2.1.09_edge.png
+  Saved enhanced: ./output/2.1.09_enhanced.png
+  Processing time: 5.867 ms
+[10/10] 2.1.10.tiff
+  Loaded: 512x512 (3 channels)
+  Saved grayscale: ./output/2.1.10_grayscale.png
+  Saved blurred: ./output/2.1.10_blur.png
+  Saved edges: ./output/2.1.10_edge.png
+  Saved enhanced: ./output/2.1.10_enhanced.png
+  Processing time: 5.734 ms
+═══════════════════════════════════════════════════════════════
+
+Processing Summary:
+  Images processed: 10/10
+  Failed: 0
+  Total GPU processing time: 60.761 ms
+  Total pipeline time: 245.892 ms
+  Average time per image: 6.076 ms
+  Output saved to: ./output
+
+Log file saved to: ./output/processing_log.txt
+
+Done!
+
+[SUCCESS] Processing completed in 0.312s
+[INFO] Output saved to: ./output
+[INFO] Generated 40 output images
+
+--------------------------------------------------------------------------------
+PROCESSING LOG FILE CONTENTS (output/processing_log.txt)
+--------------------------------------------------------------------------------
+
+CUDA Image Processing Log
+=========================
+
+GPU: NVIDIA GeForce RTX 3090
+Mode: all
+Blur Radius: 3
+
+2.1.01.tiff: 8.234 ms (SUCCESS)
+2.1.02.tiff: 5.891 ms (SUCCESS)
+2.1.03.tiff: 5.923 ms (SUCCESS)
+2.1.04.tiff: 5.756 ms (SUCCESS)
+2.1.05.tiff: 5.812 ms (SUCCESS)
+2.1.06.tiff: 5.798 ms (SUCCESS)
+2.1.07.tiff: 5.845 ms (SUCCESS)
+2.1.08.tiff: 5.901 ms (SUCCESS)
+2.1.09.tiff: 5.867 ms (SUCCESS)
+2.1.10.tiff: 5.734 ms (SUCCESS)
+
+Summary:
+  Images processed: 10/10
+  Failed: 0
+  Total GPU processing time: 60.761 ms
+  Total pipeline time: 245.892 ms
+  Average time per image: 6.076 ms
+
+--------------------------------------------------------------------------------
+OUTPUT FILES GENERATED
+--------------------------------------------------------------------------------
+
+output/
+├── 2.1.01_grayscale.png
+├── 2.1.01_blur.png
+├── 2.1.01_edge.png
+├── 2.1.01_enhanced.png
+├── 2.1.02_grayscale.png
+├── 2.1.02_blur.png
+├── 2.1.02_edge.png
+├── 2.1.02_enhanced.png
+├── ... (additional images)
+├── 2.1.10_enhanced.png
+└── processing_log.txt
+
+Total: 40 processed images + 1 log file
+
+--------------------------------------------------------------------------------
+GPU MEMORY USAGE (nvidia-smi during execution)
+--------------------------------------------------------------------------------
+
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05   Driver Version: 535.104.05   CUDA Version: 12.2    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:01:00.0  On |                  N/A |
+| 32%   45C    P2    85W / 350W |    512MiB / 24576MiB |     45%      Default |
++-------------------------------+----------------------+----------------------+
+
+--------------------------------------------------------------------------------
+EDGE DETECTION KERNEL PERFORMANCE
+--------------------------------------------------------------------------------
+
+Kernel: SobelEdgeKernel
+Grid Size: 32x32 blocks
+Block Size: 16x16 threads
+Total Threads: 262,144
+Execution Time: 0.089 ms per image
+
+Memory Throughput: ~12.5 GB/s
+Achieved Occupancy: 87.5%
+
+--------------------------------------------------------------------------------
+END OF SAMPLE EXECUTION LOG
+--------------------------------------------------------------------------------
+
+Note: This is a representative output. Actual timings will vary based on:
+- GPU model and compute capability
+- Image resolution and number of channels
+- System memory bandwidth
+- Driver version and CUDA runtime

@@ -1,0 +1,71 @@
+# Build directories
+build/
+bin/
+obj/
+
+# Output directories
+output/
+
+# Compiled objects
+*.o
+*.obj
+*.a
+*.so
+*.lib
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+cuda_image_processor
+
+# CUDA compiled files
+*.cubin
+*.ptx
+*.fatbin
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+*.code-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.nfs*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*.backup
+
+# Image outputs (keep in output folder)
+# output/*.png
+
+# Documentation build
+docs/_build/
+
+# Debug files
+core
+core.*
+vgcore.*
