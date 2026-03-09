@@ -1,0 +1,90 @@
+CUDA Image Processing Log
+=========================
+
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+Mode: all
+Blur Radius: 3
+
+2.1.01.png: 130.791 ms (SUCCESS)
+2.1.01.tiff: FAILED
+2.1.02.png: 130.804 ms (SUCCESS)
+2.1.02.tiff: FAILED
+2.1.03.png: 120.288 ms (SUCCESS)
+2.1.03.tiff: FAILED
+2.1.04.png: 143.276 ms (SUCCESS)
+2.1.04.tiff: FAILED
+2.1.05.png: 129.355 ms (SUCCESS)
+2.1.05.tiff: FAILED
+2.1.06.png: 131.852 ms (SUCCESS)
+2.1.06.tiff: FAILED
+2.1.07.png: 117.847 ms (SUCCESS)
+2.1.07.tiff: FAILED
+2.1.08.png: 124.216 ms (SUCCESS)
+2.1.08.tiff: FAILED
+2.1.09.png: 119.786 ms (SUCCESS)
+2.1.09.tiff: FAILED
+2.1.10.png: 127.175 ms (SUCCESS)
+2.1.10.tiff: FAILED
+2.1.11.png: 122.816 ms (SUCCESS)
+2.1.11.tiff: FAILED
+2.1.12.png: 122.819 ms (SUCCESS)
+2.1.12.tiff: FAILED
+2.2.01.png: 483.684 ms (SUCCESS)
+2.2.01.tiff: FAILED
+2.2.02.png: 457.955 ms (SUCCESS)
+2.2.02.tiff: FAILED
+2.2.03.png: 474.464 ms (SUCCESS)
+2.2.03.tiff: FAILED
+2.2.04.png: 490.106 ms (SUCCESS)
+2.2.04.tiff: FAILED
+2.2.05.png: 495.649 ms (SUCCESS)
+2.2.05.tiff: FAILED
+2.2.06.png: 451.823 ms (SUCCESS)
+2.2.06.tiff: FAILED
+2.2.07.png: 533.699 ms (SUCCESS)
+2.2.07.tiff: FAILED
+2.2.08.png: 649.619 ms (SUCCESS)
+2.2.08.tiff: FAILED
+2.2.09.png: 482.651 ms (SUCCESS)
+2.2.09.tiff: FAILED
+2.2.10.png: 497.884 ms (SUCCESS)
+2.2.10.tiff: FAILED
+2.2.11.png: 506.543 ms (SUCCESS)
+2.2.11.tiff: FAILED
+2.2.12.png: 523.895 ms (SUCCESS)
+2.2.12.tiff: FAILED
+2.2.13.png: 530.754 ms (SUCCESS)
+2.2.13.tiff: FAILED
+2.2.14.png: 516.102 ms (SUCCESS)
+2.2.14.tiff: FAILED
+2.2.15.png: 505.467 ms (SUCCESS)
+2.2.15.tiff: FAILED
+2.2.16.png: 494.882 ms (SUCCESS)
+2.2.16.tiff: FAILED
+2.2.17.png: 558.953 ms (SUCCESS)
+2.2.17.tiff: FAILED
+2.2.18.png: 549.718 ms (SUCCESS)
+2.2.18.tiff: FAILED
+2.2.19.png: 514.845 ms (SUCCESS)
+2.2.19.tiff: FAILED
+2.2.20.png: 510.686 ms (SUCCESS)
+2.2.20.tiff: FAILED
+2.2.21.png: 585.532 ms (SUCCESS)
+2.2.21.tiff: FAILED
+2.2.22.png: 505.173 ms (SUCCESS)
+2.2.22.tiff: FAILED
+2.2.23.png: 471.883 ms (SUCCESS)
+2.2.23.tiff: FAILED
+2.2.24.png: 582.675 ms (SUCCESS)
+2.2.24.tiff: FAILED
+3.2.25.png: 429.429 ms (SUCCESS)
+3.2.25.tiff: FAILED
+wash-ir.png: 2893.36 ms (SUCCESS)
+wash-ir.tiff: FAILED
+
+Summary:
+  Images processed: 38/76
+  Failed: 38
+  Total GPU processing time: 17218.5 ms
+  Total pipeline time: 18076.5 ms
+  Average time per image: 453.117 ms
