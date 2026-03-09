@@ -5,6 +5,7 @@
 #include "stb_image.h"
 #include "stb_image_write.h"
 
+#include <string>
 #include <cstring>
 #include <algorithm>
 #include <cctype>
